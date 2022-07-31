@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML: Taco Shop Project</title>
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <link rel="icon" href="./favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+      <nav>
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About LTS</a></li>
+          <li><a href="#Our Menu">Our Menu</a></li>
+          <li><a href="#Store Hours">Store Hours</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <img src="./IMG/tacos_close_up_400x260.png" alt="Taco's Close Up Shot" />
+      <figcaption>Little Taco Shop Tacos</figcaption>
+      <h2>Our Contact Form</h2>
+      <fieldset>
+        <legend>Send Us A Message</legend>
+        <form action="https://httpbin.org/get" method="get">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="your name"
+          />
+        </form>
+        <form action="https://httpbin.org/get" method="get">
+          <label for="email">Email:</label>
+          <input
+            type="text"
+            name="useremail"
+            id="useremail"
+            placeholder="your email"
+          />
+        </form>
+        <form action="https://httpbin.org/get" method="get">
+          <label for="usermsg">Your Message:</label>
+          <br />
+          <textarea
+            name="usermessage"
+            id="usermessage"
+            cols="30"
+            rows="10"
+            placeholder="Type your message here"
+          ></textarea>
+        </form>
+      </fieldset>
+      <button>Send</button> <button>Reset</button>
+      <h2>Our Location</h2>
+      <address>
+        <p>555 Taco Temptation Lane, Suite T</p>
+        <p>Kansas City, MO 55555-5555</p>
+        <p>Phone: <a href="tel:555-555-5555">555-555-5555</a></p>
+      </address>
+      <a href="#">Back to Top</a>
+    </section>
+    <footer>
+      <hr />
+      <p>Copyright &copy; The Little Taco Shop</p>
+    </footer>
+  </body>
+</html>
