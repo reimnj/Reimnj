@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+footer p{
+    padding: 2em 0;
+    color: white;
+    background-color: #1F2937;
+    text-align: center;
+    margin-top: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.h-container,
+.hr-section {
+    padding: 1em 20em;
+    background-color: #1F2937;
+}
+
+.h-container,
+.nav-section ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-section ul {
+    gap: 1em;
+}
+
+.nav-section ul li a {
+    color: white;
+}
+
+.hr-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 5em 20em;
+    height: 200px;
+}
+
+.hr-content {
+    width: 42%;
+}
+
+.img-placeholder {
+    width: 42%;
+}
+
+.hr-content button {
+    margin-top: 0.8em;
+    padding: 8px 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #3882F6;
+    border-style: none;
+    border-radius: 6px;
+}
+
+.img-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+}
+
+.st-section {
+    padding: 1em 20em;
+    text-align: center;
+}
+
+.st-c-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 16em;
+}
+
+.c-card {
+    width: 150px;
+}
+
+.c-card .c-img {
+    width: 150px;
+    height: 150px;
+    border: 4px #3882F6 solid;
+    border-radius: 20px;
+}
+
+.c-card p {
+    padding: 0.5em 0;
+    margin: 0 0 0 0.4em;
+}
+
+.qt-container {
+    padding: 4em 34em;
+    background-color: #E5E7EB;
+}
+
+.qt-container .quote {
+    font-style: italic;
+    font-size: 36px;
+    color: #1F2937;
+}
+
+.quote-author {
+    padding: 1em 0;
+    text-align: end;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+.cta-container {
+    padding: 10em 22em;
+}
+
+.cta-card,
+.cta-button button{
+    background-color: #3882F6;
+}
+
+.cta-card {
+    padding: 5em 10em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cta-header {
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+#cta-p {
+    color: white;
+    font-size: 20px;
+}
+
+.cta-button button {
+    padding: 6px 40px;
+    border: 2px white solid;
+    border-radius: 10px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
