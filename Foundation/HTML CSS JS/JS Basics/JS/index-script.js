@@ -16,6 +16,7 @@ function greet(name) {
 
 // Numbers
 
+/*
 const myNumber = 42;
 
 const myFloat = 42.01;
@@ -25,6 +26,7 @@ console.log(myNumber === myFloat);
 console.log(Number(myNumber) + 50);
 
 // Number Methods
+*/
 
 /* 
 
@@ -39,6 +41,7 @@ provide as the parameter.
 
 */
 
+/*
 console.log(Number.parseFloat(myNumber));
 
 // Math methods
@@ -54,9 +57,11 @@ console.log(Math.floor(3.5));
 console.log(Math.pow(2, 4));
 
 console.log(Math.min(indexNum, indexNum1)); // Math.max
+*/
 
 // Generating random numbers from 1-10.
 
+/*
 console.log(Math.floor(Math.random() * 7) + 1);
 console.log(Math.floor(Math.random() * 7) + 1);
 console.log(Math.floor(Math.random() * 7) + 1);
@@ -64,13 +69,17 @@ console.log(Math.floor(Math.random() * 7) + 1);
 const username = "Aladiah";
 
 console.log(username.charAt(Math.floor(Math.random() * username.length)));
+*/
+
 
 // Conditions (If-Else Statement)
 
+/*
 let studentID = "TUPM-20-1824";
 let schoolYr = "2122";
 let sem = "B";
 let branch = "Manila";
+*/
 
 /*
 if (doneEval === true) {
@@ -82,6 +91,7 @@ function generateToken() {
 }
 */
 
+/*
 function openslip(studentID, schoolYr, sem, branch) {
   if (slipAccess(tk) === true) {
     console.log("I'm working ofc.");
@@ -100,7 +110,7 @@ function slipAccess(tk)
     else
         return false;
 }
-
+*/
 
 /*
 document.addEventListener(
@@ -170,6 +180,7 @@ document.querySelector('label.countLabel').innerHTML = b;
 
 // Slice Method
 
+/*
 let fullName = "Aladiah Fulminar";
 let firstName;
 let lastName;
@@ -216,6 +227,7 @@ function example() {
         : condition3 ? value3
         : value4;
 }
+*/
 
 // Checked Property (HTML JS) 
 
@@ -238,6 +250,7 @@ function kanaMerge() {
 
 // Switch Case
 
+/*
 let rating = "Z";
 
 switch(rating){
@@ -250,12 +263,289 @@ switch(rating){
   default:
     console.log("No other classes detected or classes found in the database that matches the set rating.");
 }
+*/
+
+// AND OR Logical Operators
+
+/*
+let temp = 15;
+
+console.log("The temp is " + temp);
+
+if(temp > 0 && temp < 30){
+  console.log( temp + " degrees celcius is kinda cold");
+}
+*/
+
+// NOT Logical Operator
+
+/*
+let student = true;
+
+if(!student){
+  console.log("You are not a student");
+}
+else{
+  console.log("You are a student");
+}
+*/
+
+// While Loop
+
+/*
+let i = 0;
+
+while(i <= 10){
+  console.log(i);
+  i++;
+}
+*/
+
+// Do-While Loop
+
+/*
+let userInput = "";
+
+while(userInput == ""){
+  userInput = window.prompt("Enter your name: ");
+}
+
+console.log("Hello, ", userInput);
+
+*/
 
 
+// For Loop + Nested For Loop
+
+/*
+for(let i = 0; i <= 5; i++){
+  for(let j = 5; j <= i; j++){
+    console.log("*");
+  }
+  console.log("\n");
+}
+*/
 
 
+// Functions 
+
+/*
+let nameUser = "Aladiah";
+
+printOutput(nameUser);
+
+function printOutput(a)
+{
+
+  console.log("Happy Birthday! " + a);
+
+}
+*/
+
+// Return Statement -- used in functions.
+
+/*
+let sumA = 1;
+let sumB = 2;
+
+let c = add(sumA, sumB);
+
+console.log(c);
+
+function add(a, b){
+  return a + b;
+}
+*/
+
+// Ternary Operator -- more like of a if-else shortcut and can be chained like if-else-if statements.
+
+/*
+let studAge = 15;
+
+studAge >= 18 ? console.log("You are qualified as a college entry student.") : console.log("You are still a highschooler!");
+*/
+
+// Var and Let
+
+/*
+*     "var" is used if you want to use a variable outside of a block scope (function scope).
+*     "let" is used if you want to use a variable inside of a block scope only (block scope).
+*
+*/
+
+/*
+// Example:
+
+// Var scope
+
+for(var o = 1; o <= 3; o++){
+  // ----
+}
+
+console.log(o); // You can use the variable "o" even if the variable is outside of the block scope of for loop. (function scope wise).
 
 
+// let scope
 
+for(let p = 1; p <= 3; p++){
+  console.log(p) // You can use the variable "o" inside of this for loop block only or as to where the let variable is enclosed to (block scope wise).
+}
+*/
 
+// Template literals 
 
+/*
+let op = "SKILL";
+
+console.log(`What is your ${op}?`); // that's simply it.
+*/
+
+// Format Currency
+
+/*
+let myNum = 123456.789;
+
+myNum = myNum.toLocaleString("en-US", {style: "currency", currency: "USD"});
+
+console.log(myNum);
+*/
+
+ // Temperature Conversion Program
+
+ /*
+document.querySelector(".submit").addEventListener("click", conversion);
+
+function conversion(){
+
+  let temp;
+
+  temp = document.querySelector(".tempInput").value;
+  temp = Number(temp);
+
+  if(document.querySelector(".cButton").checked){
+    temp = toCelcius(temp);
+    document.querySelector(".tempInput").value = temp + "°C";
+  }
+  else if(document.querySelector(".fButton").checked){
+    temp = toFahrenheit(temp);
+    document.querySelector(".tempInput").value = temp + "°F";
+  }
+  else{
+    window.alert("Select a unit!");
+  }
+
+}
+
+function toCelcius(temp){
+  return (temp - 32) * (5/9);
+}
+
+function toFahrenheit(temp){
+  return temp * 9 / 5 + 32;
+}
+*/
+
+// Array + Looping through an array
+
+/*
+let fruits = ["Apple", "Orange", "Banana"];
+let i = 0;
+
+while(i != 3){
+  let addFruit = window.prompt("Enter another fruit: ");
+  fruits[fruits.length] = String(addFruit);
+  i++;
+}
+*/
+
+/*
+fruits.sort();
+
+console.log("I ate the " + fruits[fruits.length - 1]);
+
+fruits.pop();
+
+console.log("Fruits: ");
+*/
+
+/* // Traditional For Loop
+for(let i = 0; i < fruits.length; i++){
+  console.log(fruits[i]);
+}
+*/
+
+/*
+// New way, either which you want to use will likely depend on the functionality of your loop.
+for(let fruit of fruits) {
+  console.log(fruit);
+}
+
+console.log("Size of 'fruits' array: " + fruits.length);
+*/
+
+// 2D Arrays - An array of arrays ofc.
+
+/*
+let pop = ["Love Someone", "Blinding Lights", "Shape of You"];
+let jb = ["Let me love you", "One Time", "Eenie Meenie"];
+
+let songs = [pop, jb];
+
+console.log(songs[0][1]);
+*/
+
+/*
+let chunked = [[1,2,3], [4,5,6], [7,8,9]];
+
+for(let i = 0; i < chunked.length; i++) {
+  
+   for(let j = 0; j < chunked[i].length; j++) {
+     
+      console.log(chunked[i][j]);
+
+   }
+}
+*/
+
+// Spread Operator (...) -- unpacks an array.
+
+/*
+let numbers = [1,2,3,4,5,6,7,8,9];
+
+console.log(...numbers);
+console.log(Math.max(...numbers));
+*/
+
+// Rest parameters -- Well, what do you know, it packs arguments into an array;
+
+/*
+let student1 = "Aladiah";
+let student2 = "Jalie";
+let student3 = "BroCode"
+
+studentsList(student1, student2, student3);
+
+function studentsList(...students){
+  for(let studentNames = 0; studentNames < students.length; studentNames++){
+    console.log(students[studentNames]);
+  }
+}
+*/
+
+// Callback -- a function passed as an argument to another function.
+
+/*
+let a = 3;
+let b = 9;
+
+sum(a, b, output);
+
+function sum(a, b, outputPass){
+  let result = a + b;
+  outputPass(result);
+}
+
+function output(output){
+  console.log(output);
+}
+*/
