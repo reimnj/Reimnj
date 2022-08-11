@@ -549,3 +549,76 @@ function output(output){
   console.log(output);
 }
 */
+
+// array.forEach(element, index, array) -- executes a provided callback function once for each array element.
+
+/*
+let students =  ["aladiah", "jalie", "ria"];
+students.forEach(capitalizeString);
+
+function capitalizeString(element, index, array){
+  array[index] = element[0].toUpperCase() + element.substring(1); // array[index] containes the index of the array elements, that are the ones that are modified.
+}
+
+for(let studentList of students){
+  console.log(studentList);
+}
+*/
+
+// array.map() -- executes a provided callback function once for each array element AND creates a new array.
+
+/*
+let numbers = [1, 2, 3, 4, 5];
+let squares = numbers.map(square);
+
+squares.forEach(print);
+
+function square(element){
+  return Math.pow(element, 2);
+}
+
+function print(element){
+  console.log(element);
+}
+*/
+
+// array.filter() -- creates a new array with all elements that pass the test provided by a function.
+
+/*
+let ages = [18, 16, 21, 17, 19, 90];
+let adult = ages.filter(checkAge);
+
+adult.forEach(print);
+
+function checkAge(element){
+  return element >= 18;
+}
+
+function print(element){
+  console.log(element);
+}
+
+console.log("Total # of Adults: " + adult.length);
+*/
+
+// array.reduce() -- reduce an array to a single value.
+
+/*
+let prices = [5, 10, 15, 20, 25];
+
+console.log( "The total in is " + prices.reduce(function(total, element){return total + element}) + "$");
+*/
+
+/*
+function checkOut(total, element){
+  return total + element;
+}
+*/
+
+// Sorting Numbers
+
+/*
+let numbers = [20, 100, 3, 8, 21, 5, 42, 13];
+
+console.log(numbers.sort(function(a,b){return a - b}));
+*/
