@@ -1,0 +1,91 @@
+/*
+div.blue.green-txt {
+    background: blue;
+}
+*/
+
+/*
+span, li.red {
+    background: red;
+}
+*/
+
+/*
+ul li {
+    background: red;
+}
+
+div b {
+    background: blue;
+}
+*/
+
+/*
+span > b {
+    background: green;
+}
+*/
+
+/*
+li.red ~ li {
+    background: pink;
+}
+*/
+
+/*
+li.red + li {
+    background: pink;
+}
+*/
+
+/*
+li:hover {
+    background: pink;
+}
+*/
+
+/*
+input:focus {
+    background: pink;
+}
+*/
+
+/*
+input:required {
+    background: pink;
+}
+*/
+
+/*
+li:nth-child(2) {
+    background:pink;
+}
+*/
+
+/*
+span:only-child {
+    background: pink;
+}
+*/
+
+/*
+span:first-of-type {
+    background: pink;
+}
+*/
+
+/*
+li:not(.green) {
+    background: pink;
+}
+*/
+
+[data-f^="12"] {
+    background: pink;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+}

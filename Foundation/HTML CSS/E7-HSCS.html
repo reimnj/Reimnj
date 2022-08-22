@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            #yujin-img {
+                width: 100px;
+                border-radius: 50%;
+            }
+
+            .img-placeholder p {
+                margin-top: 1em;
+                font-weight: bold;
+            }
+
+            .h-wrapper {
+                display: flex;
+                justify-content: space-between;
+                background-color: pink;
+                padding: 5vh 50vh;
+            }
+
+            .nav-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 200px;
+                padding: 0 1em;
+            }
+
+            .nav-container ul {
+                display: flex;
+                gap: 3em;
+            }
+
+            .nav-container ul li {
+                list-style: none;
+                text-decoration: none;
+            }
+
+            .nav-container ul li a{
+                text-decoration: none;
+                font-weight: bold;
+                color: black;
+            }
+
+            @media only screen and (max-width: 1080px){
+                .h-wrapper {
+                    padding: 2vh 50vh;
+                }
+            }
+            
+            @media only screen and (max-width: 1024px){
+                .h-wrapper {
+                    padding: 2vh 20vh;
+                }
+            }
+
+            @media only screen and (max-width: 768px){
+                .h-wrapper {
+                    padding: 2vh 5vh;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="h-wrapper">
+                <div class="img-placeholder">
+                    <img id="yujin-img" src="./IMG/yujin.jpg" alt="IVE-Yujin">
+                    <p>YUJIN FANCLUB</p>
+                </div>
+                <div class="nav-container">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Fancafe</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>this is another div</div>
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>
