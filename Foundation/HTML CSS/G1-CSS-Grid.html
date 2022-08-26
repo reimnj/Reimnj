@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPOP Profiles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nanum+Gothic:wght@400;700;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Little Pat";
+        }
+
+        @font-face {
+            font-family: "Little Pat";
+            src: url('./LittlePat.otf');
+        }
+
+        body {
+            margin: 10px;
+            padding: 10px;
+            height: 100vh;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        .profile-board {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .profile-card {
+            display: flex;
+            flex-direction: row;
+            border-left-width: 5px;
+            border-left-style: solid;
+            border-left-color: purple;
+            align-items: center;
+            height: auto;
+            width: min(600px, 70%);
+            background-color: pink;
+            border-radius: 10px;
+            font-size: min(0.6rem, 0.75rem);
+            color: mediumpurple;
+        }
+
+        @media only screen and (max-width: 425px) {
+            .profile-card {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 50vh;
+                width: min(600px, 70%);
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-details {
+                display: flex;
+                justify-content: center;
+                width: 80%;
+            }
+
+        
+        }
+
+        .profile-img {
+            display: flex;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .profile-img img {
+            width: 150px;
+            padding: 5px;
+        }
+
+        .profile-details {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .profile-icon {
+            position: sticky;
+            /*
+            left: 73rem;
+            top: 20rem;
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="profile-board">
+            <div class="profile-card">
+                <div class="profile-img">
+                    <img src="IMG/yujin.jpg" alt="yujin">
+                </div>
+                <div class="profile-details">
+                    <p>Name: 안유진 (An Yujin)</p>
+                    <p>Age: 18</p>
+                    <p>Birthday: September 1, 2003</p>
+                    <p>Talent: Ace (Visual, Vocal, & Main Dancer)</p>
+                    <p>Group/s: IZ*ONE(PD48 Debut, 2018-2021), IVE(2021 - Current)</p>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-img">
+                    <img src="IMG/wony.jpg" alt="wonyoung">
+                </div>
+                <div class="profile-details">
+                    <p>Name: 장원영 (Jang Wonyoung)</p>
+                    <p>Age: 17</p>
+                    <p>Birthday: August 31, 2004</p>
+                    <p>Talent: Ace (Main Visual, Vocal, & Main Dancer)</p>
+                    <p>Group/s: IZ*ONE(PD48 Debut, 2018-2021), IVE(2021 - Current)</p>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-img">
+                    <img src="IMG/leeseo.jpg" alt="leeseo-ive">
+                </div>
+                <div class="profile-details">
+                    <p>Name: 이현서 (Lee Hyeon Seo)</p>
+                    <p>Age: 15</p>
+                    <p>Birthday: February 21, 2007</p>
+                    <p>Talent: Visual, Rapper, Main Dancer</p>
+                    <p>Group/s: IVE(2021 - Current)</p>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-img">
+                    <img src="IMG/gaeul.jpg" alt="gaeul-ive">
+                </div>
+                <div class="profile-details">
+                    <p>Name: 김가을 (Kim Ga Eul)</p>
+                    <p>Age: 19</p>
+                    <p>Birthday: September 24, 2002</p>
+                    <p>Talent: Visual, Main Rapper, & Main Dancer</p>
+                    <p>Group/s: IVE(2021 - Current)</p>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-img">
+                    <img src="IMG/rei.jpg" alt="rei-ive">
+                </div>
+                <div class="profile-details">
+                    <p>Name: 直井れい / 나오이 레이 (Naoi Rei)</p>
+                    <p>Age: 18</p>
+                    <p>Birthday: February 3, 2004 </p>
+                    <p>Talent: Ace (Main Visual, Vocal, & Main Dancer)</p>
+                    <p>Group/s: IVE(2021 - Current)</p>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-img">
+                    <img src="IMG/liz.jpg" alt="liz-ive">
+                </div>
+                <div class="profile-details">
+                    <p>Name: 김지원 (Kim Ji Won)</p>
+                    <p>Age: 17</p>
+                    <p>Birthday: November 21, 2004 </p>
+                    <p>Talent: Ace (Main Visual, Main Vocal, & Main Dancer)</p>
+                    <p>Group/s: IVE(2021 - Current)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
