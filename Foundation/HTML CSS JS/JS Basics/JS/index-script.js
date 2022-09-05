@@ -622,3 +622,16 @@ let numbers = [20, 100, 3, 8, 21, 5, 42, 13];
 
 console.log(numbers.sort(function(a,b){return a - b}));
 */
+
+
+console.log("Hello World");
+
+
+let num = 5;
+let b = 10;
+
+console.log(letme(b));
+
+function letme(param) {
+  return param + num;
+} 

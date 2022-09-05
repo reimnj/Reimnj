@@ -1,0 +1,285 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+} */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.checkbtn {
+    color: white;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {display: none;}
+
+.header-section,
+.hero-section,
+.section-one,
+.section-two,
+.section-three,
+.footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+
+
+.header-container, .footer-container {background-color: #1F2937;}
+
+.header-container, .signup-btn, a, .footer-container{color: #F9FAF8;}
+
+a {text-decoration: none;}
+
+li {list-style-type: none;}
+
+ul {display: flex; gap: 1.7em;}
+
+.nav-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2em 0;
+}
+
+.nav-section h1 {font-size: 24px;}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3em;
+    padding: 5em 0;
+}
+
+.hero-main-text {
+    font-size: 48px; 
+    font-weight: bolder; 
+    margin-bottom: 50px;
+}
+
+.hero-desc-text {
+    font-size: 18px; 
+    color: #E5E7EB;
+    margin-bottom: 30px;
+}
+
+.hero-text {width: 40%;}
+
+.hero-img {width: 400px;}
+
+.hero-img img{width: 100%;}
+
+.signup-btn {margin-top: .7em; border-style: none;}
+
+.signup-btn-rvs {border: 2px solid white;}
+
+.signup-btn, .signup-btn-rvs{
+    padding: .5em 2em;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #3882F6; 
+    color: white;
+}
+
+/* End of Header Section */
+
+/* Section One */
+
+.section-one {
+    text-align: center;
+    padding: 2em 0 6em 0;
+}
+
+.section-one-title {
+    font-size: 36px;
+    font-weight: bold;
+    padding-bottom: 1.3em;
+}
+
+.cards {
+    display: flex;
+    margin: 0 auto;
+    gap: 4em;
+    justify-content: center;
+}
+
+.sub-textbox {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.cardbox {
+    width: 100%;
+    border: 5px solid #3882F6; 
+    border-radius: 15px;
+    padding: 4em 0;
+    color: white;
+}
+
+/* End of Section One */
+
+/* Section Two */
+
+.section-two-container {background-color: #E5E7EB;}
+
+.section-two {padding: 10em 0;}
+.section-two .quote{
+    text-align: center;
+    text-align: left;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+.quote-author {
+    text-align: right;
+    padding-right: 1em;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+/* End of Section Two */
+
+/* Section Three */
+
+.section-three-container {
+    text-align: left;
+    padding: 5em;
+}
+
+.signup-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 2.5em 4em;
+    border-radius: 10px;
+}
+/* End of Section Three */
+
+/* Footer Section */
+
+.footer {
+    text-align: center;
+    padding: 2em;
+}
+
+/* End of Footer Section */
+
+/* Responsive Design Section*/
+
+/* S-Laptop */
+
+@media screen and (max-width: 1024px) {
+    .header-section {padding: 2em;}
+    .hero-section {padding: 3em 2em;}
+    .section-two {padding: 3em 7em;}
+    .section-three {padding: 3em 4em;}
+}
+
+/* End of S-Laptop Section */
+
+/* Tablet */
+
+@media screen and (max-width: 768px) {
+    .checkbtn {display:block;}
+
+    .nav-link ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        background: #2c3e50;
+        transition: all .5s;
+        text-align: center;
+    }
+
+    .nav-link ul li {
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .nav-link ul li a {font-size: 20px;}
+
+    a:hover, a.active{
+        background: none;
+        color: #2c3e50;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    .header-section {padding: 2em;}
+
+    .hero-section {flex-direction: column;}
+
+    .hero-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sub-textbox {padding: 2em;}
+
+    .cards {flex-wrap: wrap;}
+
+    .section-three-container {padding: 0;}
+
+    .signup-card {gap: 2em;}
+    
+}
+
+/* End of Tablet Section */
+
+/* Mobile Section */
+
+@media screen and (max-width: 425px) {
+
+    .nav-link {display: none;}
+
+    .nav-title {justify-content: center;}
+
+    .hero-section {
+        margin-top: 5em;
+        padding: 0;
+    }
+
+    .hero-img {width: 100%;}
+
+    .hero-img img{max-width: 350px;}
+
+    .section-two {padding: 5em 3em;}
+    .section-two .quote {
+        font-size: 22px;
+    }
+
+    .quote-author {
+        font-size: 14px;
+    }
+
+    .signup-card {
+        width: 90%; 
+        padding: 1em;
+    }
+
+    .signup-btn-rvs {padding: 1em;}
+}
+
+/* End of Mobile Section */
